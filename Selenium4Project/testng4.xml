@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="tests" thread-count="3">
+  <test name="TestOnChrome">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="demo.TestNGMultibrowserDemo"/>
+    </classes>
+  </test> 
+   <test name="TestonEdge">
+  <parameter name="browserName" value="Edge"></parameter>
+    <classes>
+      <class name="demo.TestNGMultibrowserDemo"/>
+    </classes>
+  </test>
+</suite> <!-- Suite1 -->
